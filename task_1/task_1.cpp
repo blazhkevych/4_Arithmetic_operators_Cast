@@ -12,9 +12,27 @@ int main()
 {
 	setlocale(LC_ALL, ""); //працюЇ т≥льки з потоком виведенн€
 	SetConsoleCP(1251); //встановлюЇ потр≥бну кодову таблицю, на пот≥к введенн€
-	SetConsoleOutputCP(1251); //встановлюЇ потр≥бну кодову таблицю, на пот≥к виводу.
+	SetConsoleOutputCP(1251); //встановлюЇ потр≥бну кодову таблицю, на пот≥к виводу
+
+	cout << "¬ведите первое дробное число: " << endl;
+	double number1{ 0 }, number2{ 0 };
+	cin >> number1;
+
+	cout << "¬ведите второе дробное число: " << endl;
+	cin >> number2;
+
+	int first_part_number1 = number1;
+	double second_part_number1 = number1 - first_part_number1;
+	//cout << first_part_number1 << endl;
+	//cout << second_part_number1 << endl;
+
+	int first_part_number2 = number2;
+	double second_part_number2 = number2 - first_part_number2;
+	//cout << first_part_number2 << endl;
+	//cout << second_part_number2 << endl;
+
+	cout << "—умма целых частей: " << first_part_number1 + first_part_number2 << endl;
+	cout << "—умма дробных частей: " << second_part_number1 + second_part_number2 << endl;
 
 	return 0;
-
-
 }
