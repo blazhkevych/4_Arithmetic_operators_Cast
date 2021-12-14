@@ -28,7 +28,6 @@ int main()
 	double change_from_dollar =
 		amount_in_hryvnia - ((int)hryvnia_to_dollars * dollar_rate); // 100-(3*27)=19
 
-
 	cout << "¬ведите курс евро: " << endl;
 	double euro_rate;
 	cin >> euro_rate; // 30.51
@@ -36,7 +35,6 @@ int main()
 	double hryvnia_to_euro = amount_in_hryvnia / euro_rate; // 100/30.51=3,277613897082924
 	double change_from_euro =
 		amount_in_hryvnia - ((int)hryvnia_to_euro * euro_rate); // 100-(3*30.51)=8.47
-
 
 	cout << "¬ведите курс рубл€: " << endl;
 	double rubles_rate;
