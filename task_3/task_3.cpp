@@ -38,8 +38,9 @@ int main()
 	//((15*60*60)+(20*60)+56)-((14*60*60)+(55*60)+12)=(54000+1200+56)-(50400+3300+12)=55256-53712=1544
 
 	const double cost_of_a_minute = 30;
+	double cost_of_a_second = cost_of_a_minute / 60.0;
 
-	double total_cost = (call_duration_in_seconds * cost_of_a_minute) / 100; //(1544*30)/100=463,2
+	double total_cost = (call_duration_in_seconds * cost_of_a_second) / 100; //(1544*0.5)/100=7,72
 
 	cout << "Стоимость разговора составляет: " << total_cost << " грн.";
 
